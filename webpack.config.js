@@ -117,7 +117,8 @@ module.exports = (env, argv) => ({
     historyApiFallback: {
       index: 'index.html',
       rewrites: [
-        { from: /^\/products\/product/, to: '/products/product.html' }
+        { from: /^\/products\/product$/, to: '/products/product.html' },
+        { from: /^\/products\/product\//, to: '/products/product.html' }
       ]
     }
   }
