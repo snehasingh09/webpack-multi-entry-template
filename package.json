@@ -4,6 +4,9 @@
   "description": "Use this template for creating multi entry webpack react application",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .jsx,.js src",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --verbose --display-modules true --profile --hot --open --port 3100",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

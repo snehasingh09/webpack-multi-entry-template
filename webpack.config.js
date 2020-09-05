@@ -37,6 +37,12 @@ module.exports = (env, argv) => ({
     ...htmlPlugins,
     new CleanWebpackPlugin()
   ],
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src'),
+      components: path.resolve(__dirname, 'src', 'components')
+    }
+  },
   module: {
     rules: [
       {
