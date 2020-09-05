@@ -63,7 +63,6 @@ module.exports = (env, argv) => ({
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
               outputPath: (url, resourcePath, context) => {
                 if (argv.mode === 'development') {
                   const relativePath = path.relative(context, resourcePath)
