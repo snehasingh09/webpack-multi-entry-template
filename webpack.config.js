@@ -113,6 +113,12 @@ module.exports = (env, argv) => ({
     }
   },
   devServer: {
-    port: 3000
+    port: 3000,
+    historyApiFallback: {
+      index: 'index.html',
+      rewrites: [
+        { from: /^\/products\/product/, to: '/products/product.html' }
+      ]
+    }
   }
 })
