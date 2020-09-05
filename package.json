@@ -1,0 +1,22 @@
+{
+  "name": "react-webpack-multi-entry-template",
+  "version": "1.0.0",
+  "description": "Use this template for creating multi entry webpack react application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaankeyBihari/react-webpack-multi-entry-template.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Sudhanshu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BaankeyBihari/react-webpack-multi-entry-template/issues"
+  },
+  "homepage": "https://github.com/BaankeyBihari/react-webpack-multi-entry-template#readme"
+}
