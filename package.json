@@ -4,10 +4,10 @@
   "description": "Use this template for creating multi entry webpack react application",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --color --ext .jsx,.js src",
+    "lint": "eslint --color --fix --ext .jsx,.js src",
     "lint:watch": "npm run lint --watch",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --verbose --inline --hot --open --progress --port 3100",
+    "dev": "webpack-dev-server --mode development --verbose --hot --open --progress",
     "start": "npm-run-all --parallel dev lint:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/BaankeyBihari/react-webpack-multi-entry-template#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "fontsource-roboto": "^3.0.3",
+    "material-table": "^1.69.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

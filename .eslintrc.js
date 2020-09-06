@@ -20,5 +20,6 @@ module.exports = {
     'react'
   ],
   rules: {
+    'no-multiple-empty-lines': [2, { max: 2, maxBOF: 0, maxEOF: 1 }]
   }
 }

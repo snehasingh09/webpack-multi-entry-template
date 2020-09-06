@@ -114,6 +114,7 @@ module.exports = (env, argv) => ({
   },
   devServer: {
     port: 3000,
+    inline: true,
     historyApiFallback: {
       index: 'index.html',
       rewrites: [
