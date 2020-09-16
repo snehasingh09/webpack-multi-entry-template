@@ -113,7 +113,7 @@ module.exports = (env, argv) => ({
     }
   },
   devServer: {
-    port: 3000,
+    port: 9000,
     inline: true,
     historyApiFallback: {
       index: 'index.html',
@@ -121,6 +121,12 @@ module.exports = (env, argv) => ({
         { from: /^\/products\/product$/, to: '/products/product.html' },
         { from: /^\/products\/product\//, to: '/products/product.html' }
       ]
+    },
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        secure: false
+      }
     }
   }
 })
